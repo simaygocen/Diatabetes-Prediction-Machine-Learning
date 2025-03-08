@@ -38,8 +38,8 @@ This project is a diabetes prediction system that uses Machine Learning (ML) alg
 | Insulin Level    | Insulin concentration (µU/mL)                  |
 | etc.             | Other relevant medical data                   |
 
-After entering the required information and clicking **"Predict"**, the web interface will show the prediction: **Diabetic** or **Not Diabetic**.
-Example Screenshots from Website:
+After entering the required information and clicking **"Predict"**, the web interface will show the prediction: **Diabetic** or **Not Diabetic**. Example Screenshots from Website:
+
 ![image](https://github.com/user-attachments/assets/269e4e2c-4372-4670-b827-cc6381b4453e)
 ![image](https://github.com/user-attachments/assets/8e394c8f-06f1-47a1-881c-69f1fcd77212)
 
