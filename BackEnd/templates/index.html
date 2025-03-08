@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Diabetes Prediction System</title>
+  
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Diabetes Prediction System</h1>
+
+      <div class="row">
+        <form action='/predict' method="POST" class="col s12">
+          <div class="row">
+            <div class="input-field col s4">
+              <label><b>Pregnancies</b></label>
+              <br>
+              <input name='Pregnancies' type="text" class="validate">
+            </div>
+            <div class="input-field col s4">
+
+              <label><b>Glucose</b> <span style="color: #999;">mg/dL</span></label>
+              <br>
+              <input name="Glucose" type="text" class="validate">
+
+
+            </div>
+
+            <div class="input-field col s4">
+              <label><b>BloodPressure</b> <span style="color: #999;">mm Hg</span></label>
+              <br>
+              <input name="BloodPressure" type="text" class="validate">
+
+
+            </div>
+            <div class="input-field col s4">
+              <label><b>SkinThickness</b> <span style="color: #999;">mm</span></label>
+              <br>
+              <input name="SkinThickness" type="text" class="validate">
+              
+
+            </div>
+            <div class="input-field col s4">
+              <label><b>Insulin</b> <span style="color: #999;">mu U/ml</span></label>
+              <br>
+              <input name="Insulin" type="text" class="validate">
+              
+
+            </div>
+            <div class="input-field col s4">
+              <label><b>BMI</b> <span style="color: #999;">kg/(m^2)</span></label>
+              <br>
+              <input name="BMI" type="text" class="validate">
+              
+
+            </div>
+            <div class="input-field col s4">
+              <label><b>DiabetesPedigreeFunction</b></label>
+              <br>
+              <input name="DiabetesPedigreeFunction" type="text" class="validate">
+
+            </div>
+            <div class="input-field col s4">
+              <label><b>Age</b></label>
+              <br>
+              <input name="Age" type="text" class="validate">
+
+            </div>
+
+          </div>
+
+          <div class="row center">
+
+            <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability Of Diabetes
+              </button>
+          </div>
+        </form>
+      </div>
+
+      <br>
+      <h4 align="center" <b>{{ pred | safe }}</b></h4>
+      <br>
+
+    </div>
+  </div>
+
+
+  </div>>
+
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
